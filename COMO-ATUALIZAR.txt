@@ -1,0 +1,48 @@
+NM / LEADS — Busca gratuita
+
+1. Extraia o ZIP no computador.
+2. Abra seu repositório nexo-labs no GitHub.
+3. Clique em Add file > Upload files.
+4. Arraste index.html, discovery.js, config.js, vercel.json e a pasta vendor.
+   Os arquivos devem ficar na raiz do repositório, sem uma pasta extra em volta.
+5. Clique em Commit changes. A Vercel fará a publicação automaticamente.
+6. Após concluir o deploy, abra o site e atualize com Ctrl + F5.
+
+COMO BUSCAR
+Entre na conta. Na página Prospecção, use “Descobrir novas empresas”.
+Escolha ramo, estado e cidade. Clique em “Buscar empresas”.
+Clique em “Revisar e salvar +”, confira os contatos e salve o cadastro.
+Aguarde “Salvo na nuvem” antes de sair.
+Os filtros abaixo desse painel continuam filtrando apenas sua carteira salva.
+
+Não precisa de chave de API, cartão, novo SQL ou configuração da Vercel.
+A busca faz consultas manuais diretas ao IBGE e ao Overpass/OpenStreetMap.
+São até 100 empresas por consulta; não é uma lista completa das empresas da cidade.
+Algumas cidades não têm limite municipal ou empresas disponíveis nesta fonte.
+Ausência de site/telefone não comprova que a empresa não tenha esses contatos.
+Essa fonte não fornece avaliações do Google. O campo de avaliação fica vazio.
+Consultas repetidas usam cache na sessão. Há intervalo de 15 segundos entre novas buscas.
+Serviços públicos podem ficar lentos, indisponíveis ou limitar requisições.
+
+FONTE E LICENÇA
+© OpenStreetMap contributors — Open Database License (ODbL).
+https://www.openstreetmap.org/copyright
+As notas de cada cadastro importado incluem a origem e a licença.
+Preserve a atribuição ao exportar e redistribuir dados.
+Uma base derivada redistribuída pode ter obrigações de compartilhamento pela ODbL;
+as observações comerciais privadas não devem ser publicadas automaticamente.
+https://osmfoundation.org/wiki/Licence/Community_Guidelines
+
+Cidades: API de Localidades do IBGE.
+https://servicodados.ibge.gov.br/api/docs/localidades
+
+Esta configuração foi preparada para começar com uso pessoal e consultas leves.
+Antes de oferecer a clientes, prepare uma instância própria ou um fornecedor de dados:
+os servidores públicos do Overpass não são uma infraestrutura garantida para um produto.
+https://dev.overpass-api.de/overpass-doc/en/preface/commons.html
+
+VERIFICAÇÃO
+Consulta real de restaurantes em Curitiba: 100 empresas retornadas.
+Testes de cadastro, duplicidade, filtros, exportação/restauração e sincronização: passaram.
+A publicação e o comportamento no navegador do seu endereço da Vercel ainda precisam
+ser conferidos após você enviar os arquivos ao GitHub.
