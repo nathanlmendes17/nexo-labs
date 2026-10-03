@@ -3,7 +3,7 @@ NM / LEADS — Busca gratuita
 1. Extraia o ZIP no computador.
 2. Abra seu repositório nexo-labs no GitHub.
 3. Clique em Add file > Upload files.
-4. Arraste index.html, discovery.js, config.js, vercel.json e a pasta vendor.
+4. Arraste index.html, discovery.js, config.js, vercel.json e as pastas vendor e api.
    Os arquivos devem ficar na raiz do repositório, sem uma pasta extra em volta.
 5. Clique em Commit changes. A Vercel fará a publicação automaticamente.
 6. Após concluir o deploy, abra o site e atualize com Ctrl + F5.
@@ -16,8 +16,8 @@ Aguarde “Salvo na nuvem” antes de sair.
 Os filtros abaixo desse painel continuam filtrando apenas sua carteira salva.
 
 Não precisa de chave de API, cartão, novo SQL ou configuração da Vercel.
-A busca faz consultas manuais diretas ao IBGE e ao Overpass/OpenStreetMap.
-São até 100 empresas por consulta; não é uma lista completa das empresas da cidade.
+As cidades são consultadas no IBGE. A busca de empresas passa pela função /api/discovery na Vercel, com login obrigatório, e consulta o Overpass/OpenStreetMap.
+O servidor usa cache por instância de 5 minutos e intervalo por usuário de 15 segundos, sem garantia de quota global entre instâncias. São até 100 empresas por consulta; não é uma lista completa das empresas da cidade.
 Algumas cidades não têm limite municipal ou empresas disponíveis nesta fonte.
 Ausência de site/telefone não comprova que a empresa não tenha esses contatos.
 Essa fonte não fornece avaliações do Google. O campo de avaliação fica vazio.
